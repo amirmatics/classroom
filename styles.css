@@ -1,12 +1,33 @@
-.apple{
-    color:red
+* {
+    font-family:"Courier New", Courier, monospace; /* Courier New used as main but if browser doesnt support it falls back to the next one */
 }
-#melon{
-    color:green
+.apple{ /* class="apple" */
+    color:red;
 }
-.apple#sneakers{
-    color:blue
+#melon{ /* id="melon */
+    color:green;
 }
-.apple.scooter{
-    color:darkmagenta
+.apple#sneakers{ /* class="apple" id="sneakers" */
+    color:blue;
+}
+.apple.scooter{ /* class="apple scooter" */
+    color:darkmagenta;
+}
+
+.ancestor .child{ /* anything inside both ancestor AND child gets this quality but any direct application of another class overrides it */
+    color:orange;
+}
+.test{ /* overrides nested when used directly */
+    color:black;
+}
+.textTest{
+    font-size:22px;
+    font-weight: bold;
+    /* or font-weight: 700 (1-1000)*/
+    text-align: center;
+}
+img{
+    height: auto; /* autoadjusts */
+    width: 400px;
+    /* if an image’s original size was 500px height and 1000px width, using the above CSS would result in a height of 250px. */
 }
