@@ -1,0 +1,12 @@
+.apple{
+    color:red
+}
+#melon{
+    color:green
+}
+.apple#sneakers{
+    color:blue
+}
+.apple.scooter{
+    color:darkmagenta
+}
