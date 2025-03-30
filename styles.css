@@ -1,5 +1,12 @@
-* {
+*{
     font-family:"Courier New", Courier, monospace; /* Courier New used as main but if browser doesnt support it falls back to the next one */
+}
+div{ /* applies to all div unless overrided with a class*/
+    color: white;
+    background-color: black
+}
+p{ /* applies to all p unless overrided with a class*/
+    background-color:grey
 }
 .apple{ /* class="apple" */
     color:red;
