@@ -1,13 +1,15 @@
-*{
-    font-family:"Courier New", Courier, monospace; /* Courier New used as main but if browser doesnt support it falls back to the next one */
+/* 
+* {
+    font-family:"Courier New", Courier, monospace; /* Courier New used as main but if browser doesnt support it falls back to the next one
 }
-div{ /* applies to all div unless overrided with a class*/
+div{
     color: white;
     background-color: black
 }
-p{ /* applies to all p unless overrided with a class*/
+p{
     background-color:grey
 }
+*/
 .apple{ /* class="apple" */
     color:red;
 }
@@ -37,4 +39,20 @@ img{
     height: auto; /* autoadjusts */
     width: 400px;
     /* if an image’s original size was 500px height and 1000px width, using the above CSS would result in a height of 250px. */
+}
+.a,
+.b {
+    color:red;
+}
+.c {
+    color:yellow;
+}
+.override {
+    color:blue;
+}
+div.c {
+    color:orange;
+}
+div.override{
+    background-color:grey;
 }
