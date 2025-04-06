@@ -1,3 +1,6 @@
+body {
+    font: 1.2em / 1.5 sans-serif;
+}
 .apple{ /* class="apple" */
     color:red;
 }
@@ -53,23 +56,24 @@ div.override{
     background-color:grey;
 }
 body {
-  font: 1.2em / 1.5 sans-serif;
+    font: 1.2em / 1.5 sans-serif;
 }
 .box {
-  border: 5px solid rebeccapurple;
-  background-color: lightgray;
-  padding: 40px;
-  margin: 40px;
-  width: 300px;
-  height: 150px;
+    display: block;
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
 }
 
 .alternate {
-  box-sizing: border-box;
-  width: 390px;
+    box-sizing: border-box;
+    width: 200;
 }
   
-.boxy {
+.box-container {
     border: 5px dotted black;
     margin-top: 20px;
     margin-right: 1em;
@@ -77,14 +81,23 @@ body {
     margin-left: 2em;
     padding: 1em;
 }
-  
-body {
-  font: 1.2em / 1.5 sans-serif;
+
+.box-container span {
+    display: inline-block;
+    background-color: pink;
+    border: 5px solid black;
+    padding: 1em;
 }
 
-.boxyy span {
-  background-color: pink;
-  border: 5px solid black;
-  padding: 1em;
-  display: inline-block;
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.container div {
+    background-color: lightblue;
+    border: 1px solid black;
+    height: 80px;
+    flex: 1 1 auto; /* using auto for flex-basis means it will be at least 200px */
+    /*padding: 10px;
+    margin: 5px;*/
 }
