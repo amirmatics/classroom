@@ -92,12 +92,46 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .container div {
     background-color: lightblue;
     border: 1px solid black;
+    /* padding: 50px;  delete to use padding on block type element */
     height: 80px;
-    flex: 1 1 auto; /* using auto for flex-basis means it will be at least 200px */
+    flex: 1 1 auto; /* using auto for flex-basis means it will be at least 80px */
     /*padding: 10px;
     margin: 5px;*/
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.main-content {
+    background-color: lightblue;
+    border: 1px solid darkblue;
+    flex: 1 2 auto;
+}
+.sidebar {
+    background-color: lightgreen;
+    border: 1px solid darkgreen;
+    flex: 0 0 200px;
+    
+}
+.flex-c-align {
+    height: 140px;
+    padding: 16px;
+    background: plum;
+    border: 4px solid indigo;
+    display: flex;
+    justify-content: center; /* space-between space horizontally */
+    align-items: center; /* center vertically */
+    gap: 5px; /* specifies space between items when using justify-content center */
+}
+.flex-c-item {
+    width: 60px;
+    height: 60px;
+    border: 4px solid darkslategray;
+    background: skyblue;
 }
